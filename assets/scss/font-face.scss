@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'OfficinaBold';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/offisnb-webfont.eot'); // IE9
+  src: url('../fonts/offisnb-webfont.eot?#iefix') format('embedded-opentype'), // IE6-IE8
+  url('../fonts/offisnb-webfont.woff') format('woff'), // chrome,firefox
+  url('../fonts/offisnb-webfont.ttf') format('truetype'), // chrome,firefox,opera,Safari, Android, iOS 4.2+
+  url('../fonts/offisnb-webfont.svg#officina_sans_itc_ttbold') format('svg'); // iOS 4.1-
+}
+
+@font-face {
+  font-family: 'Officina';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/offisnw-webfont.eot'); // IE9
+  src: url('../fonts/offisnw-webfont.eot?#iefix') format('embedded-opentype'), // IE6-IE8
+  url('../fonts/offisnw-webfont.woff') format('woff'), // chrome,firefox
+  url('../fonts/offisnw-webfont.ttf') format('truetype'), // chrome,firefox,opera,Safari, Android, iOS 4.2+
+  url('../fonts/offisnw-webfont.svg#officina_sans_itc_ttbook') format('svg'); // iOS 4.1-
+}

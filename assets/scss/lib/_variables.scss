@@ -1,0 +1,159 @@
+// Primary Colours
+$white: #FFFFFF;
+$red: #AE1100;
+$yellow: #FFBB00;
+
+// General colours
+$orange: #FF5500;
+$green: #77BB55;
+$purple: #880088;
+$teal: #006263;
+$indigo: #540055;
+$violet: #F0E6ec;
+$pink: #AD52AD;
+$gray: #DBDFE3;
+
+// brand
+$london-councils-purple: #490E6F;
+$london-councils-pink: #CF0072;
+
+//custom
+$london-councils: #490E6F;
+$carbon: #121212;
+$highlight: $yellow;
+$graphite: #282828;
+$success: #338800;
+$danger: #ae1100;
+$light: #ededed;
+$dark: #444444;
+
+// Site colours
+$primary: $purple;
+$secondary: $carbon;
+$tertiary: $green;
+$visited: $secondary;
+
+// grays
+$gray-primary: $gray;
+$gray-secondary: $gray-dark;
+$gray-tertiary: $secondary;
+
+// Tints
+$primary-tint: rgba( $primary, 0.2);
+$secondarytint: rgba( $secondary, 0.2);
+$green-tint: rgba( $green, 0.2);
+$indigo-tint: rgba( $indigo, 0.2);
+$purple-tint: rgba( $purple, 0.2);
+$pink-tint: rgba( $pink, 0.2);
+$red-tint: rgba( $red, 0.2);
+$orange-tint: rgba( $orange, 0.2);
+$yellow-tint: rgba( $yellow, 0.2);
+
+
+$theme-colors: ( // Bootstrap colours
+'primary': $primary, 'secondary': $secondary, 'success': $success, 'info': $carbon, 'warning': $orange, 'danger': $red, 'light': $light, 'dark': $dark, // Map additional colours to 'theme colours'
+'carbon': $carbon, 'graphite': $graphite, 'stonewash': $stonewash, 'gray-tint': $gray-tint, 'purple-tint': $purple-tint, 'green-tint': $green-tint, 'indigo-tint': $indigo-tint, // Map additional colours to 'theme colours' - can be used for backgrounds for example '.bg-green'
+'indigo': $indigo, 'purple': $purple, 'pink': $pink, 'red': $red, 'orange': $orange, 'yellow': $yellow, 'green': $green, 'teal': $teal, 'cyan': $cyan, 'gray': $gray, 'gray-dark': $gray-dark, 'white': $white, 'visited': $visited, );
+
+// Breadcrumb navigation
+$breadcrumb: $gray-tertiary;
+
+// Link colours
+$link-color: $primary;
+$link-hover-color: $carbon;
+$focus: $yellow;
+
+// Background colours
+$body-bg: $white;
+$body-color: $secondary;
+$breadcrumb-bg: $white;
+$alert-bar-minor: $yellow;
+$alert-bar-notable: $carbon;
+
+$bg-carbon: $carbon;
+
+// Fonts
+$font-family-base: Arial, Helvetica, sans-serif; // BS font variable
+$font-family-sanserif: Arial, Helvetica, sans-serif; // BS font variable
+$font-family-secondary: 'OfficinaBold', Arial, Helvetica, sans-serif;
+$font-family-icons: 'Font Awesome 5 Free';
+$headings-font-family: $font-family-secondary;
+// Font base size
+$font-size-base: 1rem; // Assumes the browser default, typically 16px
+
+$button-icons: $yellow;
+
+$link-button: $primary;
+$link-button-text: $white;
+$link-button-text-focus: $carbon;
+
+$link-button-primary: $green;
+$link-button-primary-focus: $teal;
+$link-button-primary-text: $carbon;
+$link-button-primary-text-focus: $white;
+
+$link-button-secondary-focus: $cyan;
+$link-button-secondary-text: $white;
+$link-button-secondary-text-focus: $white;
+
+$link-button-tertiary: $orange;
+$link-button-tertiary-focus: $yellow;
+$link-button-tertiary-text: $white;
+
+// Font sizes
+$font-size-ex-ex-lg: $font-size-base * 1.375; // ~22px ~1.375rem
+$font-size-ex-lg: $font-size-base * 1.25; // ~20px ~1.25rem
+$font-size-lg: $font-size-base * 1.1875; // ~19px ~1.1875rem
+$font-size-ex-med: $font-size-base * 1.125; // ~18px ~1.125rem
+$font-size-med: $font-size-base * 1.063; // ~17px ~1.063rem
+$font-size-sm: $font-size-base * .9375; // ~15px ~.9375rem
+$font-size-ex-sm: $font-size-base * .875; // ~14px ~.875rem
+$font-size-ex-ex-sm: $font-size-base * .8125; // ~13px ~.0.8125rem
+
+// Heading sizes
+$h1-font-size: $font-size-base * 2.375; // ~38px ~2.375
+$h2-font-size: $font-size-base * 2; // ~32px ~2rem
+$h3-font-size: $font-size-base * 1.625; // ~26px ~1.625rem
+$h4-font-size: $font-size-base * 1.5; // ~24px ~1.5rem
+$h5-font-size: $font-size-ex-ex-lg; // ~22px ~1.375rem
+$h6-font-size: $font-size-ex-lg; // ~20px ~1.25rem
+
+$btn-font-weight: $font-bold; // for fallbacks only
+
+$btn-background: $primary;
+$btn-hover-background: $indigo;
+
+$accordion-background: $primary;
+
+$skip-main: $primary;
+
+// Hide default input focus
+$component-active-bg: $yellow;
+$input-btn-focus-color: rgba($component-active-bg, 1);
+
+// Main navigation links
+$navbar-dark-hover-color: $yellow;
+$navbar-dark-active-color: $gray;
+$navbar-dark-toggler-icon-bg: $gray;
+$navbar-padding-x: 0;
+
+//Horizontal rule
+$hr-color: $gray;
+
+//Form input
+$input-color: $gray-dark;
+
+// Form validation
+$form-feedback-valid-color: $success;
+$form-feedback-invalid-color: $danger;
+
+//Form input
+$input-border-color: $stonewash !important;
+
+$input-height: calc(2.875rem + 2px);
+$input-button-height: calc(2.875rem + 4px);
+
+$btn-font-size-sm: 0.9375rem;
+
+$checkbox-outline: #EEEEEE;
+

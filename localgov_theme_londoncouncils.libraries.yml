@@ -1,0 +1,31 @@
+global:
+  css:
+    theme:
+      assets/css/font-face.css: {preprocess: false}
+      assets/css/lib/main.css: {}
+
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+
+fontawesome:
+  remote: https://fontawesome.com/
+  version: 5.13.0
+  license:
+    name: Font Awesome Free License
+    url: https://github.com/FortAwesome/Font-Awesome/blob/master/LICENSE.txt
+  css:
+    theme:
+      https://use.fontawesome.com/releases/v5.13.0/css/all.css:
+        type: external
+        minified: true
+
+# Move skip-link above EU cookie compliance popup.
+skip-link-relocation:
+  js:
+    assets/js/skip-link-relocation.js: {}
+  dependencies:
+    - eu_cookie_compliance/eu_cookie_compliance_bare

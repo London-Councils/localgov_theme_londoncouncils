@@ -1,0 +1,17 @@
+header.bg-londoncouncils {
+  background-color: $london-councils-purple;
+}
+
+.header-inner {
+  border-bottom: 0.3125rem solid $london-councils-pink;
+}
+
+.navbar-brand { // fix width of logo for mobiles
+  min-width: 6.25rem !important;
+  padding: 1rem 0;
+
+  img {
+    min-width: 4rem;
+    max-height: 4rem;
+  }
+}

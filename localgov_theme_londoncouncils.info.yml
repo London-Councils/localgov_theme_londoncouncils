@@ -1,0 +1,43 @@
+name: "London Councils"
+description: "Drupal 8 theme for London Councils"
+type: theme
+core_version_requirement: ^8.8 || ^9
+
+base theme: localgov_theme
+
+libraries:
+  - localgov_theme_londoncouncils/global
+
+# Switch off Localgov theme styles.
+libraries-override:
+  localgov_theme/global:
+    css:
+      theme:
+        assets/css/font-face.css: false
+        assets/css/lib/main.css: false
+      base:
+        https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i: false
+
+regions:
+  header: "Header"
+  search: "Search"
+  mobile_search: "Mobile search"
+  primary_menu: "Primary menu"
+  secondary_menu: "Secondary menu"
+  banner: "Banner"
+  breadcrumb: "Breadcrumb"
+  messages: "Messages"
+  content_top: "Content top"
+  content: "Content"
+  content_bottom: "Content bottom"
+  sidebar_first: "Sidebar first"
+  sidebar_second: "Sidebar second"
+  footer_first: "Footer first"
+  footer_second: "Footer second"
+  footer_third: "Footer third"
+  lower_footer_first: "Lower footer first"
+  lower_footer_second: "Lower footer second"
+  lower_footer_third: "Lower footer third"
+  disabled: "Disabled"
+
+logo: londoncouncils-white.svg
