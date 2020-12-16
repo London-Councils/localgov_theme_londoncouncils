@@ -20,6 +20,7 @@
 @import '../../../node_modules/bootstrap/scss/alert';
 @import '../../../node_modules/bootstrap/scss/breadcrumb';
 @import '../../../node_modules/bootstrap/scss/buttons';
+@import '../../../node_modules/bootstrap/scss/close';
 @import '../../../node_modules/bootstrap/scss/custom-forms';
 @import '../../../node_modules/bootstrap/scss/dropdown';
 @import '../../../node_modules/bootstrap/scss/forms';
@@ -51,7 +52,7 @@
 @import '../../../../../contrib/localgov_theme/assets/scss/lib/partials/accordion';
 @import '../../../../../contrib/localgov_theme/assets/scss/lib/partials/account';
 @import '../../../../../contrib/localgov_theme/assets/scss/lib/partials/admin';
-@import '../../../../../contrib/localgov_theme/assets/scss/lib/partials/alert';
+//@import '../../../../../contrib/localgov_theme/assets/scss/lib/partials/alert';
 @import '../../../../../contrib/localgov_theme/assets/scss/lib/partials/base';
 @import '../../../../../contrib/localgov_theme/assets/scss/lib/partials/breadcrumb';
 @import '../../../../../contrib/localgov_theme/assets/scss/lib/partials/buttons';
@@ -87,4 +88,5 @@
 @import 'partials/base';
 @import 'partials/header';
 @import 'partials/navbar';
+@import 'partials/alert';
 @import 'partials/footer';

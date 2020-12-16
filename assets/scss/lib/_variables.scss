@@ -12,6 +12,7 @@ $indigo: #540055;
 $violet: #F0E6ec;
 $pink: #AD52AD;
 $gray: #DBDFE3;
+$cyan: #17a2b8;
 
 // brand
 $london-councils-purple: #490E6F;
@@ -51,7 +52,7 @@ $yellow-tint: rgba( $yellow, 0.2);
 
 
 $theme-colors: ( // Bootstrap colours
-'primary': $primary, 'secondary': $secondary, 'success': $success, 'info': $carbon, 'warning': $orange, 'danger': $red, 'light': $light, 'dark': $dark, // Map additional colours to 'theme colours'
+'primary': $primary, 'secondary': $secondary, 'success': $success, 'info': $cyan, 'warning': $orange, 'danger': $red, 'light': $light, 'dark': $dark, // Map additional colours to 'theme colours'
 'carbon': $carbon, 'graphite': $graphite, 'stonewash': $stonewash, 'gray-tint': $gray-tint, 'purple-tint': $purple-tint, 'green-tint': $green-tint, 'indigo-tint': $indigo-tint, // Map additional colours to 'theme colours' - can be used for backgrounds for example '.bg-green'
 'indigo': $indigo, 'purple': $purple, 'pink': $pink, 'red': $red, 'orange': $orange, 'yellow': $yellow, 'green': $green, 'teal': $teal, 'cyan': $cyan, 'gray': $gray, 'gray-dark': $gray-dark, 'white': $white, 'visited': $visited, );
 
@@ -69,8 +70,15 @@ $body-color: $secondary;
 $breadcrumb-bg: $white;
 $alert-bar-minor: $yellow;
 $alert-bar-notable: $carbon;
-
 $bg-carbon: $carbon;
+
+// Alerts
+$alert-border-width: .0625rem;
+$alert-bg-level: -11;
+$alert-border-level: -8;
+$alert-color-level: 4;
+$alert-link-font-weight: $font-bold;
+$alert-font-weight: normal;
 
 // Fonts
 $font-family-base: Arial, Helvetica, sans-serif; // BS font variable
