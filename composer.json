@@ -1,7 +1,7 @@
 {
     "name": "londoncouncils/localgov_theme_londoncouncils",
     "description": "Feature rich child theme for the London Councils corporate site, based on LocalGov Drupal.",
-    "type": "drupal-theme",
+    "type": "drupal-custom-theme",
     "homepage": "https://github.com/londoncouncils/localgov_theme_londoncouncils",
     "license": "GPL-2.0-or-later",
     "require": {
