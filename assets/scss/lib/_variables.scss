@@ -9,7 +9,8 @@ $green: #77BB55;
 $purple: #880088;
 $teal: #006263;
 $indigo: #540055;
-$violet: #F0E6ec;
+$violet: #f0e6ec;
+$violet-light: #f7f7ff;
 $pink: #AD52AD;
 $gray: #DBDFE3;
 $cyan: #17a2b8;
@@ -83,6 +84,7 @@ $alert-font-weight: normal;
 // Fonts
 $font-family-base: Arial, Helvetica, sans-serif; // BS font variable
 $font-family-sanserif: Arial, Helvetica, sans-serif; // BS font variable
+$font-family-highlight: 'Officina', Arial, Helvetica, sans-serif;
 $font-family-secondary: 'OfficinaBold', Arial, Helvetica, sans-serif;
 $font-family-icons: 'Font Awesome 5 Free';
 $headings-font-family: $font-family-secondary;

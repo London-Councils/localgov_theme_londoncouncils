@@ -123,4 +123,16 @@
       text-decoration: none;
     }
   }
+
+  blockquote {
+    background-color: $violet-light;
+    border-left: 0.3125rem solid $london-councils-purple;
+    color: $london-councils-purple;
+    font-family: $font-family-highlight;
+    padding: 1.625rem 1.625rem 1.625rem 2rem;
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
 }
