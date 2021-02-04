@@ -15,6 +15,7 @@
 }
 
 .localgov-featured-news {
+  grid-column-gap: 2rem;
   grid-template-columns: repeat(1, minmax(0, 1fr));
 
   @include media-breakpoint-up(sm) {
