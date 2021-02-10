@@ -1,5 +1,14 @@
 <header class="bg-londoncouncils">
 
+  {#
+  Keyboard navigation/accessibility link to main content section in
+  page.html.twig.
+  #}
+  <a href="#main-content" class="visually-hidden focusable skip-link">
+    <i class="fas fa-fast-forward" aria-hidden="true"></i>
+    {{ 'Skip to main content'|t }}
+  </a>
+
   <div class="header-inner site-max container-fluid">
   <!-- Main navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark site-max">
@@ -12,7 +21,7 @@
 
         <div class="mobile-nav d-lg-none">
           <!-- Mobile toggle button -->
-          <button id="js-nav-toggle" class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileToggle" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <button id="js-nav-toggle" class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileToggle" aria-controls="mobileToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="fa fa-times d-none"></span>
             <span class="fa fa-bars fa-1x"></span>
           </button>

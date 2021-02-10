@@ -100,7 +100,7 @@
     {% endif %}
   {% endblock %}
 
-  <div{{ pageAttributes.addClass('row') }}>
+  <div id="main-content" tabindex="-1" {{ pageAttributes.addClass('row') }}>
 
     {{ page.messages }}
 
@@ -121,7 +121,6 @@
 
       <main id="content" role="main"{{ content_attributes.addClass(content_classes) }}>
         <section class="section">
-          <a id="main-content" tabindex="-1"></a>
           {{ page.content }}
         </section>
       </main>

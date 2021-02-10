@@ -1,0 +1,23 @@
+// Accessible links
+a {
+  &:hover,
+  &:focus {
+    > img {
+      @include outline(.1875rem, 0.3125rem, $focus);
+    }
+  }
+
+  &.visually-hidden.focusable.skip-link {
+    &:focus,
+    &:active {
+      position: absolute !important;
+      left: 0.625rem;
+      top: 0.625rem;
+      z-index: 999;
+    }
+  }
+}
+
+#main-content {
+  scroll-margin-top: 5rem;
+}
