@@ -7,5 +7,14 @@ body {
 }
 
 #main-content {
-  margin-top: 2rem;
+  margin-top: 1rem;
+}
+
+main {
+  margin-top: 0;
+}
+
+section {
+  margin-bottom: ($spacer * 1);
+  padding-bottom: ($spacer * 1);
 }

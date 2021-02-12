@@ -3,7 +3,7 @@ a {
   &:hover,
   &:focus {
     > img {
-      @include outline(.1875rem, 0.3125rem, $focus);
+      @include outline(.3125rem, 0, $focus);
     }
   }
 
