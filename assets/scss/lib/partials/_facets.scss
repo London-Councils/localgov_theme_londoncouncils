@@ -1,0 +1,20 @@
+.block-facets {
+  background-color: $gray-tint;
+  padding: 1rem;
+}
+
+.facet-filter-checkboxes {
+  background-color: transparent;
+
+  label span {
+    display: inline;
+  }
+
+  label::before {
+    background-color: $white;
+  }
+}
+
+.facets-widget-checkbox > ul {
+  padding: 0;
+}

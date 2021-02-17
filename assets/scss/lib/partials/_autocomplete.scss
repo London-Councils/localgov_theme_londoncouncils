@@ -1,0 +1,17 @@
+.ui-autocomplete.search-api-autocomplete-search {
+  max-width: 20rem !important;
+
+  a {
+    font-weight: normal;
+
+    &:focus,
+    &:hover {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+}
+
+.search-api-autocomplete-search .ui-menu-item {
+  border-bottom: 0.0625rem solid $gray-tint;
+}
