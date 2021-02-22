@@ -32,6 +32,7 @@
     }
 
     a {
+      color: $primary;
       display: block;
       text-decoration: none;
     }
@@ -47,7 +48,8 @@
   }
 }
 
-.block-localgov-news-feed {
+.block-localgov-news-feed,
+.view-localgov-news-search {
   article {
     border-bottom: 0.0626rem solid $dark;
     display: flex;
@@ -103,10 +105,16 @@
     font-size: 1.5rem;
     letter-spacing: -0.025rem;
     line-height: 2rem;
+    margin-top: 0;
+
+    a {
+      color: $primary;
+    }
   }
 }
 
-.node--localgov_newsroom {
+.node--localgov_newsroom,
+.view-localgov-news-search {
   article > a {
     &:hover,
     &:focus {
