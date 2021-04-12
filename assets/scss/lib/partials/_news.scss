@@ -124,19 +124,15 @@
   }
 }
 
-.newsroom--article {
+.news-article {
   h1 {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
 
-  .newsroom--info {
+  .news-article__metadata {
     margin-top: -.3125rem;
     margin-bottom: 1.25rem;
-
-    .newsroom--category::before {
-      content: "  /  ";
-    }
 
     a {
       text-decoration: none;
@@ -152,6 +148,21 @@
 
     p {
       font-size: 1.25rem;
+    }
+  }
+
+  .news-article__metadata--categories {
+    display: inline;
+    list-style: none;
+
+    li {
+      display: inline;
+      font-size: 1rem;
+
+      &:not(:last-child):after {
+        content: '/';
+        margin: 0 0.25rem;
+      }
     }
   }
 }

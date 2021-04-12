@@ -1,0 +1,48 @@
+.contact-container {
+  background: $gray-tint;
+  border-left: 0.313rem solid $london-councils-purple;
+
+  @include rem(padding, 20, 30, 15);
+  @include rem(margin-bottom, 25);
+
+  h2 {
+    margin: 0;
+    line-height: 1;
+
+    @include rem(padding-bottom, 15);
+  }
+
+  ul {
+    font-weight: $font-bold;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+
+    span {
+      display: inline-block;
+      text-align: center;
+
+      @include rem(width, 20);
+      @include rem(padding-right, 10);
+    }
+
+    .fa {
+      font-size: $font-size-sm;
+    }
+  }
+
+  i {
+    font-size: $font-size-ex-med;
+
+    @include rem(margin-right, 5);
+  }
+
+  p {
+    font-size: $font-size-med;
+  }
+}
+
+.contact-title {
+  font-weight: $font-bold;
+  text-decoration: none;
+}

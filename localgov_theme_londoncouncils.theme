@@ -5,23 +5,19 @@
  * London Councils theme file.
  */
 
-use Drupal\Core\Template\Attribute;
-
 /**
- * Implements hook_preprocess_breadcrumb
- * Include current page in breadcrumb as non-linked title
+ * Implements hook_preprocess_HOOK().
  */
-/*function localgov_theme_londoncouncils_preprocess_breadcrumb(&$variables) {
-  if ($variables['breadcrumb']) {
-    $request = Drupal::request();
-    $route_match = Drupal::routeMatch();
-    $page_title = Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
-
-    if (!empty($page_title)) {
-      $variables['breadcrumb'][] = [
-        'text' => $page_title
-      ];
+function localgov_theme_londoncouncils_preprocess_node(&$variables) {
+  $type = $variables['node']->getType();
+  if ($type == 'localgov_news_article') {
+    $user = $variables['node']->getOwner();
+    $uid = $user->id();
+    $profiles = \Drupal::entityTypeManager()->getStorage('profile')->loadByProperties(['uid' => $uid, 'type' => 'press_contact']);
+    if ($profile = reset($profiles)) {
+      $variables['press_name'] = $profile->get('field_name')->value;
+      $variables['press_email'] = $user->getEmail();
+      $variables['press_phone'] = $profile->get('field_phone')->value;
     }
   }
 }
-*/
