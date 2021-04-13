@@ -1,3 +1,10 @@
 .navbar {
+  align-items: first baseline;
+  justify-content: flex-start;
   padding-left: 0;
+
+  > .container,
+  > .container-fluid {
+    justify-content: flex-start;
+  }
 }
