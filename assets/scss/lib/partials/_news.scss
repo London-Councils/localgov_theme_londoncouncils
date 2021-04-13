@@ -1,4 +1,21 @@
+.localgov-featured-news,
+.news-article {
+  a {
+    color: $primary;
+    display: block;
+    text-decoration: none;
+
+    &:focus,
+    &:hover,
+    &:active {
+      color: $black;
+    }
+  }
+}
+
 .block-localgov-featured-news-block {
+  margin-bottom: 3rem;
+
   h2 {
     margin-bottom: 1.875rem;
 
@@ -29,12 +46,6 @@
   article {
     img {
       margin-bottom: 0.5rem;
-    }
-
-    a {
-      color: $primary;
-      display: block;
-      text-decoration: none;
     }
 
     p {
@@ -89,16 +100,6 @@
 
   h2 {
     margin-bottom: 1.875rem;
-
-    &::after {
-      background-color: $london-councils-pink;
-      bottom: -.4375rem;
-      content: "";
-      display: block;
-      height: .3125rem;
-      position: relative;
-      width: 2.5rem;
-    }
   }
 
   h3 {
@@ -106,10 +107,6 @@
     letter-spacing: -0.025rem;
     line-height: 2rem;
     margin-top: 0;
-
-    a {
-      color: $primary;
-    }
   }
 }
 
@@ -128,6 +125,7 @@
   h1 {
     font-size: 2.25rem;
     line-height: 2.5rem;
+    margin-bottom: 1.25rem;
   }
 
   .news-article__metadata {
@@ -164,5 +162,18 @@
         margin: 0 0.25rem;
       }
     }
+  }
+}
+
+.block-localgov-news-feed h2,
+.news-article h1 {
+  &::after {
+    background-color: $london-councils-pink;
+    bottom: -.4375rem;
+    content: "";
+    display: block;
+    height: .3125rem;
+    position: relative;
+    width: 2.5rem;
   }
 }

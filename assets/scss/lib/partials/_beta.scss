@@ -11,7 +11,6 @@
     color: $white;
     font-size: 0.8125rem;
     font-weight: 700;
-    letter-spacing: 0.0625rem;
     margin-right: 0.1875rem;
     padding: 0.25rem 0.5rem;
     text-transform: uppercase;
@@ -20,9 +19,11 @@
   details {
     border: none;
   }
+
   details[open] > div {
     animation: animateDown 0.2s linear forwards;
     margin-top: 1rem;
+
     @media (prefers-reduced-motion) {
       animation: none;
     }
@@ -33,6 +34,7 @@
       opacity: 0.5;
       transform: translateY(-1rem);
     }
+
     100% {
       opacity: 1;
       transform: translateY(0);
@@ -43,8 +45,8 @@
     &:focus,
     &:hover,
     &:active {
-      outline: 2px solid $yellow;
-      outline-offset: 2px;
+      outline: 0.125rem solid $yellow;
+      outline-offset: 0.125rem;
     }
   }
 }

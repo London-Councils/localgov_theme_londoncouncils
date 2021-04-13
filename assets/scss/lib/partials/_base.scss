@@ -7,14 +7,18 @@ body {
 }
 
 #main-content {
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 main {
-  margin-top: 0;
+  margin-top: 1rem;
 }
 
 section {
   margin-bottom: ($spacer * 1);
   padding-bottom: ($spacer * 1);
+}
+
+.block-localgov-page-header-block {
+  margin-top: 2rem;
 }

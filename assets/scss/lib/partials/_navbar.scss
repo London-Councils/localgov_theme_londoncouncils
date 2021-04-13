@@ -8,3 +8,11 @@
     justify-content: flex-start;
   }
 }
+
+a.navbar-brand {
+  &:focus img,
+  &:hover img,
+  &:active img {
+    outline-offset: 0.1875rem;
+  }
+}
