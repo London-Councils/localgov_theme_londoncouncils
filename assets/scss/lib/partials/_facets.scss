@@ -6,15 +6,28 @@
 .facet-filter-checkboxes {
   background-color: transparent;
 
+  label {
+    padding-right: 0.125rem;
+  }
+
   label span {
     display: inline;
   }
 
   label::before {
     background-color: $white;
+    margin-left: 0.25rem;
   }
 }
 
 .facets-widget-checkbox > ul {
   padding: 0;
+}
+.facet-item label:hover {
+  cursor: pointer;
+}
+
+.facet-item input:focus + label,
+.facet-item input:hover + label {
+  background-color: $focus;
 }
