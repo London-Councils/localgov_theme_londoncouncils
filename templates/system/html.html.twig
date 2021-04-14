@@ -48,6 +48,18 @@
     <!--[if lt IE 9 ]>
     <script src="{{ base_path ~ directory }}/assets/js/respond.min.js"></script>
     <![endif]-->
+
+    {% if environment in ['beta'] %}
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYTSY38G9T"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-JYTSY38G9T');
+      </script>
+    {% endif %}
   </head>
 
   <body{{ attributes }}>
