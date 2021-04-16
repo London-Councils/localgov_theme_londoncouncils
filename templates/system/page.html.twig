@@ -120,9 +120,7 @@
       {% endif %}
 
       <main id="content" role="main"{{ content_attributes.addClass(content_classes) }}>
-        <section class="section">
-          {{ page.content }}
-        </section>
+        {{ page.content }}
       </main>
 
       {% if has_sidebar_second %}

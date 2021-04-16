@@ -81,7 +81,7 @@
 <article{{ attributes.addClass(classes) }}>
 
   <div class="news-article__metadata">
-    <time datetime="{{ node.localgov_news_date()|date("U") }}" class="news-article__metadata-item news-article__metadata--date">
+    <time datetime="{{ node.localgov_news_date.value }}" class="news-article__metadata-item news-article__metadata--date">
       {{ content.localgov_news_date }}
     </time>
     {% if not node.localgov_news_categories.isEmpty() %}
