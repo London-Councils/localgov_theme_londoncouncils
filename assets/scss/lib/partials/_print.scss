@@ -2,6 +2,7 @@
   .toolbar,
   .contextual-region .tabs,
   .bg-londoncouncils,
+  .region-breadcrumb,
   .node--view-mode-teaser img,
   aside,
   footer,
@@ -11,13 +12,14 @@
     display: none !important;
   }
 
-  .node--localgov_newsroom #main-content {
-    padding-top: 3rem;
+  #main-content {
+    padding-top: 6rem;
   }
 
   .print-logo {
+    left: 3rem !important;
     position: absolute;
-    top: 0;
+    top: 1rem;
   }
 
   .localgov-featured-news {
