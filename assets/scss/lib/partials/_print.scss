@@ -1,3 +1,9 @@
+@media screen {
+  .page-url-qr-code {
+    display: none;
+  }
+}
+
 @media print {
   .toolbar,
   .contextual-region .tabs,
@@ -19,6 +25,13 @@
   .print-logo {
     left: 3rem !important;
     position: absolute;
+    top: 1rem;
+  }
+
+  .page-url-qr-code {
+    display: block !important;
+    position: absolute;
+    right: 3rem;
     top: 1rem;
   }
 
