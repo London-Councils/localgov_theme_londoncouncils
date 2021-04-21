@@ -1,0 +1,26 @@
+@media print {
+  .toolbar,
+  .contextual-region .tabs,
+  .bg-londoncouncils,
+  .node--view-mode-teaser img,
+  aside,
+  footer,
+  .sub-footer-nav,
+  .copyright,
+  #infinite-scroll--trigger {
+    display: none !important;
+  }
+
+  .node--localgov_newsroom #main-content {
+    padding-top: 3rem;
+  }
+
+  .print-logo {
+    position: absolute;
+    top: 0;
+  }
+
+  .localgov-featured-news {
+    display: block;
+  }
+}

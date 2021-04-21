@@ -43,6 +43,10 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  h3 {
+    font-size: 1.5rem;
+  }
+
   article {
     img {
       margin-bottom: 0.5rem;
