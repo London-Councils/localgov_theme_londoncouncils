@@ -14,6 +14,7 @@ const sass = require('gulp-sass'), // Sass plugin for gulp See https://yarnpkg.c
       postcss = require('gulp-postcss'), // PostCSS processor https://github.com/postcss/postcss
       reporter = require('postcss-reporter'),
       scss = require("postcss-scss"),
+      uncss = require('gulp-uncss'),
       plumber = require('gulp-plumber'),
       notify = require('gulp-notify'),
       browserSync = require('browser-sync').create(), // Create BrowserSync instance See https://www.browsersync.io/docs/gulp
@@ -85,11 +86,23 @@ function generateStyle() {
       .pipe(sass())
       .on('error', sass.logError)
       .pipe(postcss(postcssPluginsPostSass, {syntax: scss})) // Run postCSS after SASS
+      .pipe(uncss({
+        html: [
+          'http://londoncouncils.test/uncss',
+          'http://londoncouncils.test/',
+          'http://londoncouncils.test/news/search?f%5B0%5D=date%3A2021',
+          'http://londoncouncils.test/news/2021/boroughs-champion-switch-electric-vehicles-3000-charging-points-delivered'
+        ],
+        ignore: [
+          '/autocomplete/',
+          '.ui-autocomplete.search-api-autocomplete-search a'
+        ]
+      }))
       .pipe(sourcemaps.mapSources(function(sourcePath, file) {
         return sourceSassFolder + '/' + sourcePath;
       }))
       .pipe(sourcemaps.write('.'))
-      .pipe(gulp.dest('assets/css/'))
+      .pipe(gulp.dest('./assets/css/'))
   );
 }
 
@@ -117,10 +130,6 @@ function serve() {
 /**
  * Functions end
  */
-
-
-
-
 
 /**
  * Gulp tasks exports start
