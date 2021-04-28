@@ -95,7 +95,8 @@ function generateStyle() {
         ],
         ignore: [
           '/autocomplete/',
-          '.ui-autocomplete.search-api-autocomplete-search a'
+          '.ui-autocomplete.search-api-autocomplete-search a',
+          '/paragraph/'
         ]
       }))
       .pipe(sourcemaps.mapSources(function(sourcePath, file) {

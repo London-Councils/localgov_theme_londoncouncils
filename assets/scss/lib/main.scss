@@ -72,7 +72,7 @@
 //@import '../../../../../contrib/localgov_theme/assets/scss/lib/partials/modal';
 @import '../../../../../contrib/localgov_theme/assets/scss/lib/partials/nav';
 //@import '../../../../../contrib/localgov_theme/assets/scss/lib/partials/notice';
-//@import '../../../../../contrib/localgov_theme/assets/scss/lib/partials/page-builder';
+@import '../../../../../contrib/localgov_theme/assets/scss/lib/partials/page-builder';
 @import '../../../../../contrib/localgov_theme/assets/scss/lib/partials/search';
 @import '../../../../../contrib/localgov_theme/assets/scss/lib/partials/service';
 //@import '../../../../../contrib/localgov_theme/assets/scss/lib/partials/service-status';
@@ -84,6 +84,7 @@
 
 // Import local partials
 @import 'partials/base';
+@import 'partials/blocks/*';
 @import 'partials/header';
 @import 'partials/links';
 @import 'partials/navbar';
