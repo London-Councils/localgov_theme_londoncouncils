@@ -51,7 +51,7 @@ var config = {
           const smScript = document.createElement('script');
           smScript.setAttribute('id', 'smcx-sdk');
           smScript.type = 'text/javascript';
-          smScript.async = true;
+          smScript.async = false;
           smScript.src = 'https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgdwlzD1NjFToERhnwN_2BAtg3pSW2TwJJfvrBkEUeYpcwEM.js';
           //smScript.text = '(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgdwlzD1NjFToERhnwN_2BAtg3pSW2TwJJfvrBkEUeYpcwEM.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");';
           betaSurvey.appendChild(smScript);

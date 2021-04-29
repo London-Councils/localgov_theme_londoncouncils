@@ -47,7 +47,8 @@
     {% if environment in ['dev', 'test', 'beta'] %}
 
       <script src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js"></script>
-      {{ attach_library('localgov_theme_londoncouncils/civic-cookies') }}
+      <script src="/themes/custom/localgov_theme_londoncouncils/assets/js/civic-cookies.js"></script>
+
     {% endif %}
   </head>
 
