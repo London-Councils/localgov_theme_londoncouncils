@@ -44,7 +44,7 @@
     <css-placeholder token="{{ placeholder_token }}">
     <js-placeholder token="{{ placeholder_token }}">
 
-    {% if environment in ['dev', 'beta'] %}
+    {% if environment in ['dev', 'test', 'beta'] %}
 
       <script src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js"></script>
       {{ attach_library('localgov_theme_londoncouncils/civic-cookies') }}
