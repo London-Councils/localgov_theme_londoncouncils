@@ -28,3 +28,11 @@ function localgov_theme_londoncouncils_preprocess_node(&$variables) {
     }
   }
 }
+
+function localgov_theme_londoncouncils_page_attachments_alter(&$page){
+  $current_path = \Drupal::service('path.current')->getPath();
+  $current_alias = \Drupal::service('path.alias_manager')->getAliasByPath($current_path);
+  if (\Drupal::service('path.matcher')->matchPath($current_alias, '/cookies')) {
+    $page['#attached']['library'][] = 'localgov_theme_londoncouncils/cookies';
+  }
+}

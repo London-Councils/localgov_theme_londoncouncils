@@ -45,15 +45,9 @@
     <js-placeholder token="{{ placeholder_token }}">
 
     {% if environment in ['dev', 'beta'] %}
-      <script type="text/javascript">
-        /*<![CDATA[*/
-        (function() {
-          var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
-          sz.src = 'https://siteimproveanalytics.com/js/siteanalyze_67788905.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
-        })();
-        /*]]>*/
-      </script>
+
+      <script src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js"></script>
+      {{ attach_library('localgov_theme_londoncouncils/civic-cookies') }}
     {% endif %}
   </head>
 

@@ -24,8 +24,7 @@ fontawesome:
         minified: true
 
 # Move skip-link above EU cookie compliance popup.
-skip-link-relocation:
+cookies:
   js:
-    assets/js/skip-link-relocation.js: {}
-  dependencies:
-    - eu_cookie_compliance/eu_cookie_compliance_bare
+    assets/js/civic-cookies.js: {}
+    assets/js/cookies.js: {}

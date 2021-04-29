@@ -19,11 +19,10 @@
         <img class="img-fluid" src="{{ logopath }}" alt="{{ site_name }}" width="135" height="64" />
       </a>
 
-      {% if environment in ['dev', 'beta'] %}
+      {% if environment in ['dev', 'test', 'beta'] %}
         <div class="beta">
-          <details>
+          <details id="beta-survey">
               <summary><span class="beta__badge">Beta</span> This is a new service - your <span class="beta__link">feedback</span> will help us to improve it.</summary>
-              <script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgdwlzD1NjFToERhnwN_2BAtg3pSW2TwJJfvrBkEUeYpcwEM.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script>
           </details>
         </div>
       {% endif %}

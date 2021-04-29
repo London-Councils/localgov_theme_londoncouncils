@@ -91,7 +91,8 @@ function generateStyle() {
           'http://londoncouncils.test/uncss',
           'http://londoncouncils.test/',
           'http://londoncouncils.test/news/search?f%5B0%5D=date%3A2021',
-          'http://londoncouncils.test/news/2021/boroughs-champion-switch-electric-vehicles-3000-charging-points-delivered'
+          'http://londoncouncils.test/news/2021/boroughs-champion-switch-electric-vehicles-3000-charging-points-delivered',
+          'http://londoncouncils.test/cookies'
         ],
         ignore: [
           '/autocomplete/',
