@@ -1,0 +1,11 @@
+.btn {
+  text-decoration: none;
+
+  &:hover {
+    color: $button-text-focus;
+    background: $btn-hover-background;
+    box-shadow: none; // bs override
+
+    @include outline(.1875rem, -.1875rem, $focus);
+  }
+}
