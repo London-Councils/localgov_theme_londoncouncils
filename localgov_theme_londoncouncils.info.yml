@@ -10,6 +10,10 @@ libraries:
 
 # Switch off Localgov theme styles.
 libraries-override:
+  localgov_skeleton/global:
+    css:
+      theme:
+        assets/css/gds.css: false
   localgov_theme/global:
     css:
       theme:
